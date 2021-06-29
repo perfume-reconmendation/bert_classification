@@ -2,7 +2,8 @@
 pretrained 된 transformer의 bert 모델을 이용한 분류기
 
 ## dataset
-
+repository : topic_modeling <br>
+https://github.com/perfume-reconmendation/topic_modeling
 
 ## experiment
 
