@@ -7,6 +7,14 @@ https://github.com/perfume-reconmendation/topic_modeling
 
 ## experiment
 
+- train_ : 15000
+  - train : 13500
+  - validation : 1500
+- test : 5000
+
+- lr : 2e-5
+- eps : 1e-8
+
 | # | epoch_num | batch_size | train_avg_loss | validation_acc | test_acc |
 |---|-----------|------------|----------------|----------------|----------|
 | 1 | 1         | 8          | 0.89           | 0.73           |          |
