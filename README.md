@@ -27,4 +27,4 @@ https://github.com/perfume-reconmendation/topic_modeling
 ### va(89_) classification model
 | # | data_size  | epoch_num | batch_size | train_avg_loss | validation_acc | test_acc |
 |---|------------|-----------|------------|----------------|----------------|----------|
-| 1 | 15000, 0.1 | 1         | 8          | 4.34           | 0.03           | 0.03     |
+| 1 | 15000, 0.1 | 1         | 4          | 4.34           | 0.03           | 0.03     |
