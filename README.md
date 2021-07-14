@@ -22,3 +22,8 @@ https://github.com/perfume-reconmendation/topic_modeling
 | 3 | 75000, 0.1 | 1         | 4          | 0.77           | 0.79           | 0.79     |
 | 4 | 75000, 0.1 | 2         | 4          | 0.57           | 0.81           | 0.81     |
 | 5 |            |           |            |                |                |          |
+
+## 89_Head model
+| # | data_size  | epoch_num | batch_size | train_avg_loss | validation_acc | test_acc |
+|---|------------|-----------|------------|----------------|----------------|----------|
+| 1 | 15000, 0.1 | 1         | 8          | 4.34           | 0.03           | 0.03     |
