@@ -15,7 +15,7 @@ https://github.com/perfume-reconmendation/topic_modeling
 - lr : 2e-5
 - eps : 1e-8
 
-### LDA classification model
+### 4-type classification model
 | #   | data_size  | max_len | epoch_num | batch_size | train_avg_loss | validation_acc | test_acc |
 |-----|------------|---------|-----------|------------|----------------|----------------|----------|
 | 1.T | 15000, 0.1 | 512     | 1         | 8          | 0.89           | 0.73           |          |
@@ -27,7 +27,7 @@ https://github.com/perfume-reconmendation/topic_modeling
 | 7.F | 75000, 0.1 | 256     | 3         | 8          | 0.28           | 0.82           | 0.82     |
 
 
-### va(89_) classification model
+### 89-label classification model
 | # | data_size  | epoch_num | batch_size | train_avg_loss | validation_acc | test_acc |
 |---|------------|-----------|------------|----------------|----------------|----------|
 | 1 | 15000, 0.1 | 1         | 4          | 4.34           | 0.03           | 0.03     |
