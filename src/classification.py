@@ -16,12 +16,6 @@ def evaluate(text, e_model, e_tokenizer):
   e_model.to(device)
   e_model.eval()
 
-  m = {
-      0: 'A type',
-      1: 'B type',
-      2: 'C type',
-      3: 'D type'
-  }
   MAX_LEN = 256
 
   sentence = text
