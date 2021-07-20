@@ -3,19 +3,17 @@ from transformers import BertForSequenceClassification
 from keras.preprocessing.sequence import pad_sequences
 
 import torch
-if torch.cuda.is_available():    
-    device = torch.device("cuda")
-    print('There are %d GPU(s) available.' % torch.cuda.device_count())
-    print('We will use the GPU:', torch.cuda.get_device_name(0))
-  else:
-    device = torch.device("cpu")
-    print('No GPU available, using the CPU instead.')
 
-load_model = BertForSequenceClassification.from_pretrained("/content/drive/MyDrive/SAI/p/lunab_model_21_07_14_1")
-load_tokenizer = BertTokenizer.from_pretrained("/content/drive/MyDrive/SAI/p/lunab_tokenizer_21_07_14_1")
+if torch.cuda.is_available():
+  device = torch.device("cuda")
+  print('There are %d GPU(s) available.' % torch.cuda.device_count())
+  print('We will use the GPU:', torch.cuda.get_device_name(0))
+else:
+  device = torch.device("cpu")
+  print('No GPU available, using the CPU instead.')
 
-def evaluate(text, e_model=load_model, e_tokenizer=load_tokenizer):
-  e_model.cuda()
+def evaluate(text, e_model, e_tokenizer):
+  e_model.to(device)
   e_model.eval()
 
   m = {
