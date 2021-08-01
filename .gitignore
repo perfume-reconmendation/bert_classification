@@ -1,6 +1,10 @@
 # osx
 .DS_Store
 
+# model
+src/model
+src/tokenizer
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

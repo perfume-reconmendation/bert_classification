@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from transformers import BertTokenizer
 from transformers import BertForSequenceClassification
 from keras.preprocessing.sequence import pad_sequences
@@ -51,5 +53,5 @@ def test(text, model, tokenizer):
 if __name__ == "__main__":
   m_model, m_tokenizer = load_model('./src/model', './src/tokenizer')
 
-  test("i feel the wind while looking at the night sky in summer.", m_model, m_tokenizer)
-  test("it's like having a strong spice in your mouth.", m_model, m_tokenizer,)
+  print(test("i feel the wind while looking at the night sky in summer.", m_model, m_tokenizer))
+  print(test("it's like having a strong spice in your mouth.", m_model, m_tokenizer))
